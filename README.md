@@ -2,7 +2,8 @@
 Implementation of [Fully Bayesian VIB-DeepSSM](https://arxiv.org/abs/2305.05797) to be presented at MICCAI 2023.
 Please cite the paper if you use this code in research.
 
-To run the supershapes experiment, first download and unzip the supershapes dataset: [SS_data](https://drive.google.com/file/d/1oegp1RZVFJfx8s7aL5GgX55UKGhRgAZn/view?usp=drive_link)
+To run the supershapes experiment, first download and unzip the supershapes dataset: [SS_data](https://drive.google.com/file/d/1oegp1RZVFJfx8s7aL5GgX55UKGhRgAZn/view?usp=drive_link).
+The supershape file names specificy the number of shape lobes and the degree to which the image is blurred. 
 
 Next generate torch loaders for the train, validation and test sets by calling `SS_loaders.py`. Specifcy the desired size of the training set (up to 1000). For example:
 ```
