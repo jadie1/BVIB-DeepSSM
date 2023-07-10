@@ -1,10 +1,10 @@
 {
-  "model_name": "concrete_vib",
+  "model_name": "BE_concrete_vib",
   "num_latent_dim": 10,
   "paths": {
-    "out_dir": "SS_experiments/size_100/",
-    "loader_dir": "SS_loaders/size_100/",
-    "aug_dir": "SS_loaders/size_100/"
+    "out_dir": "SS_experiments/",
+    "loader_dir": "SS_loaders/",
+    "aug_dir": "SS_loaders/"
   },
   "encoder": {
     "stochastic": true,
@@ -44,17 +44,18 @@
   "dropout": {
     "type": "concrete",
     "params": {
-      "start_epoch": 100,
+      "start_epoch": 300,
       "lengthscale": 0.001,
       "init_rate": 0.2,
-      "size": 100
+      "size": 1000
     }
   },
   "batch_ensemble": {
-    "enabled": false,
-    "mixup": false
+    "enabled": true,
+    "mixup": false,
+    "num_models": 4
   },
   "initialize_model": null,
   "use_best_model": true,
-  "size": 100
+  "size": 1000
 }

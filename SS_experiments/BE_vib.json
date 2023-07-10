@@ -1,10 +1,10 @@
 {
-  "model_name": "vib",
+  "model_name": "BE_vib",
   "num_latent_dim": 10,
   "paths": {
-    "out_dir": "SS_experiments/size_200/",
-    "loader_dir": "SS_loaders/size_200/",
-    "aug_dir": "SS_loaders/size_200/"
+    "out_dir": "SS_experiments/",
+    "loader_dir": "SS_loaders/",
+    "aug_dir": "SS_loaders/"
   },
   "encoder": {
     "stochastic": true,
@@ -48,10 +48,11 @@
     }
   },
   "batch_ensemble": {
-    "enabled": false,
-    "mixup": false
+    "enabled": true,
+    "mixup": false,
+    "num_models": 4
   },
   "initialize_model": null,
   "use_best_model": true,
-  "size": 200
+  "size": 1000
 }
